@@ -29,6 +29,8 @@ ESP32-C6 및 ESP32-S3에서 실행을 확인했으며, 현재 버전은 **PC에�
 - USB Mode: Hardware CDC and JTAG
 - USB CDC On Boot: Enabled
 
+<img width="500" alt="Arduino_setting" src="https://github.com/user-attachments/assets/eb0f96a8-7459-4caa-a8f1-5fbdbb434f9f" />
+
 `firmware/`의 S3용 `.ino` 파일을 열고 ESP32-S3에 업로드합니다.
 
 **2. PC 환경 준비**
