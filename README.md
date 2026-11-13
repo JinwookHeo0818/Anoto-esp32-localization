@@ -12,7 +12,7 @@ ESP32-C6 및 ESP32-S3에서 실행을 확인했으며, 현재 버전은 **PC에�
 - `src/`: PC에서 영상 준비, USB 통신, 결과 표시를 수행하는 코드
 - `START.bat`: PC 실험 실행
 - `INSTALL.bat`: 필요한 Python 패키지 설치
-- `input.mp4`, `input_noise.mp4`: 테스트 영상
+- `input.mp4`, `input_noise.mp4`, `input_new.mp4`: 테스트 영상
 - `README_Anoto_S3_KO`: 자세한 설치 및 실행 설명
 
 ## 실행 방법
