@@ -1,6 +1,6 @@
 # Anoto-Based Localization on ESP32-S3
 
-Anoto 패턴을 이용하여 위치 \((x,y)\)와 방향 \(\theta\)를 추정하는 C++ 프로그램입니다.
+Anoto 패턴을 이용하여 위치 $(x,y)$와 방향 $\theta$를 추정하는 C++ 프로그램입니다.
 
 ESP32-C6 및 ESP32-S3에서 실행을 확인했으며, 현재 버전은 **PC에서 녹화 영상의 프레임을 USB로 전송하고 MCU에서 위치를 계산하는 방식**입니다.
 
