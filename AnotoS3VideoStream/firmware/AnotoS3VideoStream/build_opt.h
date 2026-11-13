@@ -1,0 +1,3 @@
+-fexceptions
+-O2
+-fno-fast-math

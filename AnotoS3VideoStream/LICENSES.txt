@@ -1,0 +1,71 @@
+MIT License
+
+Copyright (c) 2026
+Portions derived from py-microdots: Copyright (c) 2022 Christoph Heindl.
+See THIRD_PARTY_NOTICES.txt.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+CODE SEQUENCES AND CODEC ALGORITHM
+
+The numerical MNS, A1, A2, A3, A4_alt sequences and the codec design are derived
+from cheind/py-microdots by Christoph Heindl. This implementation uses the
+anoto_6x6_a4_fixed variant. Inverse maps and periodic prefix sums are generated
+from those sequences; they do not enumerate a physical floor or printed sheet.
+
+https://github.com/cheind/py-microdots
+https://raw.githubusercontent.com/cheind/py-microdots/develop/microdots/anoto_sequences.py
+https://raw.githubusercontent.com/cheind/py-microdots/develop/microdots/codec.py
+https://raw.githubusercontent.com/cheind/py-microdots/develop/microdots/integer.py
+
+The upstream author expressly notes that A4_alt changes compatibility with
+existing Anoto technology. This project is NOT a universal commercial Anoto
+reader. It is compatible with the supplied Python pattern configuration.
+
+MIT License
+
+Copyright (c) 2022 Christoph Heindl
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+OTHER COMPONENTS
+
+Windows uses the operating system's Windows Imaging Component, not a bundled
+third-party image decoding library. Linux uses system libjpeg and libpng.
+Those libraries are not distributed in this ZIP. The vision pipeline and
+standalone PC wrapper are new C++ implementations based on the supplied
+Python processing structure. No OpenCV, Python, NumPy, or SciPy library is
+embedded or required by the Windows executable.
